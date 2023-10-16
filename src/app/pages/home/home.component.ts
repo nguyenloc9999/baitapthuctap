@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { ICart } from 'src/app/interfaces/cart';
 import { IProduct } from 'src/app/interfaces/product';
-import { ProductService } from 'src/app/services/product.service';
-import { CartService } from 'src/app/services/cart.service';
+import { ProductService } from 'src/app/services/product/product.service';
+import { CartService } from 'src/app/services/cart/cart.service';
 
 
 @Component({
