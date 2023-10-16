@@ -1,18 +1,17 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { ICart } from 'src/app/interfaces/cart';
 import { IProduct } from 'src/app/interfaces/product';
-import { ProductService } from 'src/app/services/product.service';
 import { CartService } from 'src/app/services/cart.service';
-
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-base-layout',
+  templateUrl: './base-layout.component.html',
+  styleUrls: ['./base-layout.component.css']
 })
-export class HomeComponent {
+export class BaseLayoutComponent {
   cart !: ICart
   productsInCart: IProduct[] = []
   cartItemCount: number = 0;
