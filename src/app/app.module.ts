@@ -15,6 +15,9 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { BannerComponent } from './components/banner/banner.component';
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { ProductListComponent } from './components/product-list/product-list.com
     BannerComponent,
     BaseLayoutComponent,
     ProductListComponent,
+    ContactPageComponent,
+    CategoriesComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,

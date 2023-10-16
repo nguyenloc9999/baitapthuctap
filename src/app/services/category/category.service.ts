@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ICategory } from '../interfaces/category';
+import { ICategory } from 'src/app/interfaces/category';
 
 @Injectable({
   providedIn: 'root'
@@ -13,18 +13,18 @@ export class CategoryService {
   }
 
   getCategories(): Observable<ICategory[]> {
-    return this.http.get<ICategory[]>('https://node-bookselt.onrender.com/api/categories');
+    return this.http.get<ICategory[]>('http://localhost:8081/api/categories');
   }
   getCategoryById(id: string | number): Observable<ICategory> {
-    return this.http.get<ICategory>(`https://node-bookselt.onrender.com/api/categories/${id}`);
+    return this.http.get<ICategory>(`http://localhost:8081/api/categories/${id}`);
   }
   addCategory(category: ICategory): Observable<ICategory> {
-    return this.http.post<ICategory>('https://node-bookselt.onrender.com/api/categories', category);
+    return this.http.post<ICategory>('http://localhost:8081/api/categories', category);
   }
   updateCategory(category: ICategory): Observable<ICategory> {
-    return this.http.patch<ICategory>(`https://node-bookselt.onrender.com/api/categories/${category._id}`, category)
+    return this.http.patch<ICategory>(`http://localhost:8081/api/categories/${category._id}`, category)
   }
   removeCategory(id: number): Observable<ICategory> {
-    return this.http.delete<ICategory>(`https://node-bookselt.onrender.com/api/categories/${id}`)
+    return this.http.delete<ICategory>(`http://localhost:8081/api/categories/${id}`)
   }
 }

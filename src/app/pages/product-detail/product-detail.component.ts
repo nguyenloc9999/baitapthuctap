@@ -6,11 +6,11 @@ import Swal from 'sweetalert2';
 
 import { FormBuilder, Validators } from '@angular/forms';
 import { IProduct } from 'src/app/interfaces/product';
-import { ProductService } from 'src/app/services/product.service';
 import { IComment } from 'src/app/interfaces/comment';
 import { ICategory } from 'src/app/interfaces/category';
-import { CartService } from 'src/app/services/cart.service';
-import { CommentService } from 'src/app/services/comment.service';
+import { CartService } from 'src/app/services/cart/cart.service';
+import { CommentService } from 'src/app/services/comment/comment.service';
+import { ProductService } from 'src/app/services/product/product.service';
 
 @Component({
   selector: 'app-product-detail',
