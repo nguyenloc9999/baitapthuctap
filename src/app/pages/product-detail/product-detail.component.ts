@@ -1,8 +1,6 @@
 import { Component, ElementRef  } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
 import Swal from 'sweetalert2';
-
 
 import { FormBuilder, Validators } from '@angular/forms';
 import { IProduct } from 'src/app/interfaces/product';
