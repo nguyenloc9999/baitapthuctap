@@ -10,14 +10,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { SignUpComponent } from './pages/sign/sign-up/sign-up.component';
+import { SignInComponent } from './pages/sign/sign-in/sign-in.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     ContactPageComponent,
     CategoriesComponent,
     AboutPageComponent,
+    SignUpComponent,
+    SignInComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
