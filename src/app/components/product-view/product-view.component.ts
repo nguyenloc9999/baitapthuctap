@@ -1,14 +1,26 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator'
+import { trigger, transition, style, animate } from '@angular/animations';
 import { IProduct } from 'src/app/interfaces/product';
 import { ProductService } from 'src/app/services/product/product.service';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  selector: 'app-product-view',
+  templateUrl: './product-view.component.html',
+  styleUrls: ['./product-view.component.css'],
+  animations: [
+    trigger('transitionMessages', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate(300, style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        animate(300, style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
-export class ProductListComponent {
+export class ProductViewComponent {
   products: IProduct[] = [];
   @ViewChild(MatPaginator) paginator: MatPaginator
 
