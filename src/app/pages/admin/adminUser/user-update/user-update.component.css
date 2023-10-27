@@ -1,0 +1,8 @@
+.image-preview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-preview img {
+    width: 50px;
+}

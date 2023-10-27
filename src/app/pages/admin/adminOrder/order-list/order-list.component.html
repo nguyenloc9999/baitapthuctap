@@ -1,0 +1,31 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên Khách Hàng</th>
+        
+        <th scope="col">Địa Chỉ</th>
+        <th scope="col">Số ĐT</th>
+        
+        <th scope="col">Trạng Thái</th>
+        <th scope="col">Ngày Đặt Hàng</th>
+        
+        <th scope="col" [width]="167">Chức Năng</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders; index as i">
+        <td scope="row">{{i+1}}</td>
+        <td>{{order.name}}</td>
+        
+        <td>{{order.address}}</td>
+        <td>{{order.phone}}</td>
+          <td>{{order.status.status}}</td>
+          <td>{{order.createdAt}}</td>
+        <td>
+          <button class="btn btn-danger " routerLink="/admin/order/{{order._id}}">Chi tiết</button>
+        </td>
+      </tr>
+  
+    </tbody>
+  </table>

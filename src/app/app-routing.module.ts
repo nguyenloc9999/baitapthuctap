@@ -17,6 +17,11 @@ import { CategoryAddComponent } from './pages/admin/adminCategory/category-add/c
 import { CategoryUpdateComponent } from './pages/admin/adminCategory/category-update/category-update.component';
 import { ProductListComponent } from './pages/admin/adminProduct/product-list/product-list.component';
 import { authGuard } from './auth.guard';
+import { UserListComponent } from './pages/admin/adminUser/user-list/user-list.component';
+import { UserUpdateComponent } from './pages/admin/adminUser/user-update/user-update.component';
+import { CommentListComponent } from './pages/admin/adminComment/comment-list/comment-list.component';
+import { OrderListComponent } from './pages/admin/adminOrder/order-list/order-list.component';
+import { OrderDetailComponent } from './pages/admin/adminOrder/order-detail/order-detail.component';
 
 const routes: Routes = [
   {
@@ -40,6 +45,11 @@ const routes: Routes = [
       { path: "categories", component: CategoryListComponent },
       { path: "categories/add", component: CategoryAddComponent },
       { path: "categories/:id/update", component: CategoryUpdateComponent },
+      { path: "user", component: UserListComponent },
+      { path: "user/:id/update", component: UserUpdateComponent },
+      { path: "comments", component: CommentListComponent },
+      { path: "order", component: OrderListComponent},
+      {path: "order/:id", component: OrderDetailComponent}
     ]
 
   },
