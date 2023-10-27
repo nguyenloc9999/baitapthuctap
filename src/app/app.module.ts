@@ -30,6 +30,13 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { ProductListComponent } from './pages/admin/adminProduct/product-list/product-list.component';
 import { ProductViewComponent } from './components/product-view/product-view.component';
+import { UserListComponent } from './pages/admin/adminUser/user-list/user-list.component';
+import { UserUpdateComponent } from './pages/admin/adminUser/user-update/user-update.component';
+import { CommentListComponent } from './pages/admin/adminComment/comment-list/comment-list.component';
+import { PayComponent } from './pages/pay/pay.component';
+import { OrderComponent } from './pages/order/order.component';
+import { OrderListComponent } from './pages/admin/adminOrder/order-list/order-list.component';
+import { OrderDetailComponent } from './pages/admin/adminOrder/order-detail/order-detail.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +60,13 @@ import { ProductViewComponent } from './components/product-view/product-view.com
     DashboardComponent,
     AdminLayoutComponent,
     ProductViewComponent,
+    UserListComponent,
+    UserUpdateComponent,
+    CommentListComponent,
+    PayComponent,
+    OrderComponent,
+    OrderListComponent,
+    OrderDetailComponent
   ],
   imports: [
     BrowserModule,
