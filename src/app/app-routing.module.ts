@@ -22,17 +22,23 @@ import { UserUpdateComponent } from './pages/admin/adminUser/user-update/user-up
 import { CommentListComponent } from './pages/admin/adminComment/comment-list/comment-list.component';
 import { OrderListComponent } from './pages/admin/adminOrder/order-list/order-list.component';
 import { OrderDetailComponent } from './pages/admin/adminOrder/order-detail/order-detail.component';
+import { PayComponent } from './pages/pay/pay.component';
+import { OrderComponent } from './pages/order/order.component';
+import { CategoryDetailComponent } from './pages/category-detail/category-detail.component';
 
 const routes: Routes = [
   {
     path: "", component: BaseLayoutComponent, children: [
       { path: "", component: HomeComponent },
       { path: "product/:id", component: ProductDetailComponent },
+      { path: "category/:id", component: CategoryDetailComponent },
       { path: "about", component: AboutPageComponent },
       { path: "contact", component: ContactPageComponent },
       { path: "signup", component: SignUpComponent },
       { path: "signin", component: SignInComponent },
-      { path: "cart", component: CartComponent },
+      { path: "cart", component: CartComponent }, 
+      { path: "pay", component: PayComponent },
+      {path: "order", component: OrderComponent }
     ]
   },
   {

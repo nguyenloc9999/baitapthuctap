@@ -37,6 +37,7 @@ import { PayComponent } from './pages/pay/pay.component';
 import { OrderComponent } from './pages/order/order.component';
 import { OrderListComponent } from './pages/admin/adminOrder/order-list/order-list.component';
 import { OrderDetailComponent } from './pages/admin/adminOrder/order-detail/order-detail.component';
+import { CategoryDetailComponent } from './pages/category-detail/category-detail.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { OrderDetailComponent } from './pages/admin/adminOrder/order-detail/orde
     PayComponent,
     OrderComponent,
     OrderListComponent,
-    OrderDetailComponent
+    OrderDetailComponent,
+    CategoryDetailComponent
   ],
   imports: [
     BrowserModule,
