@@ -18,6 +18,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     ContactPageComponent,
     CategoriesComponent,
     AboutPageComponent,
+    ContactUsPageComponent,
   ],
   imports: [
     BrowserModule,

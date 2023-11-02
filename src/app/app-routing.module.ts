@@ -5,6 +5,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
       { path: "", component: HomeComponent },
       { path: "product/:id", component: ProductDetailComponent },
       { path: "about", component: AboutPageComponent },
-      { path: "contact", component: ContactPageComponent },
+      { path: "contact", component: ContactUsPageComponent },
       
     ]
   },
